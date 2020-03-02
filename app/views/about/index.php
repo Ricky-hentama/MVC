@@ -7,6 +7,7 @@
     <title>About Index</title>
 </head>
 <h1>Ini adalah halaman about Index</h1>
+<p>Hai , Nama saya <?= $data['nama'] ?> , saya seorang <?= $data['pekerjaan'] ?> dan berumur <?= $data['umur'] ?> tahun</p>
 
 <body>
 
