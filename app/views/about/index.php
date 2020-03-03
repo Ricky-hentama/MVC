@@ -11,11 +11,10 @@
         }
     </style>
 </head>
-<h1>Ini adalah halaman about Index</h1>
-<p>Hai , Nama saya <span><?= $data['nama'] ?> </span>, saya seorang <span><?= $data['pekerjaan'] ?></span> dan berumur <span><?= $data['umur'] ?></span> tahun</p>
 
 <body>
-
+    <h1>Ini adalah halaman about Index</h1>
+    <p>Hai , Nama saya <span><?= $data['nama'] ?> </span>, saya seorang <span><?= $data['pekerjaan'] ?></span> dan berumur <span><?= $data['umur'] ?></span> tahun</p>
 </body>
 
 </html>
