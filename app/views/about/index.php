@@ -8,7 +8,6 @@
     <style>
         span {
             color: red;
-
         }
     </style>
 </head>
