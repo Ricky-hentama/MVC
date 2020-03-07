@@ -21,6 +21,7 @@
                 <a class="nav-item nav-link active" href="http://localhost/mvc/public">Home <span class="sr-only">(current)</span>
                 </a>
                 <a class="nav-item nav-link" href="http://localhost/mvc/public/about">About </a>
+                <a class="nav-item nav-link" href="http://localhost/mvc/public/teacher">Teacher</a>
                 <a class="nav-item nav-link" href="http://localhost/mvc/public/about/page">Page</a>
             </div>
         </div>
