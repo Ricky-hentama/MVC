@@ -5,9 +5,9 @@
             <ul>
                 <?php foreach ($data['guru'] as $gr) : ?>
 
-                    <li><?= $gr['Nama']; ?></li>
-                    <li><?= $gr['Mapel'] ?></li>
-                    <li><?= $gr['Umur']; ?></li>
+                    <li><?= $gr['nama']; ?></li>
+                    <li><?= $gr['mapel'] ?></li>
+                    <li><?= $gr['umur']; ?></li>
                     <br>
                 <?php endforeach; ?>
             </ul>
