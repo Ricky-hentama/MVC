@@ -2,31 +2,23 @@
 
 class teacher_model
 {
-    private $guru = [
-        [
-            'Nama' => 'Ricky Hentama',
-            'Mapel' => 'Electrical Wirring',
-            'Umur' => 22
-        ],
-        [
-            'Nama' => 'Hasan Reynhard Sinaga',
-            'Mapel' => 'Web Programming',
-            'Umur' => 69
-        ],
-        [
-            'Nama' => 'Arjanu Setyawan',
-            'Mapel' => 'Pend. Agama',
-            'Umur' => 26
-        ],
-        [
-            'Nama' => 'Faizal Susanto',
-            'Mapel' => 'Pend. Seksual',
-            'Umur' => 28
-        ]
-    ];
+    private $dbh;
+    private $statment;
 
-    public function getAllGuru()
+    public function __construct()
     {
-        return $this->guru;
+        //data source name
+        $dsn = 'mysqli:host=localhost;dbname=phpdasar';
+        try {
+            $this->dbh = new PDO($dsn, 'root', '');
+        } catch (PDOException $e) {
+            die($e->getMessage());
+        }
+    }
+
+    public function getAllguru()
+    {
+        $this->statment = $this->dbh->prepare('SELECT * FROM guru');
+        $this->statment->execute();
     }
 }
