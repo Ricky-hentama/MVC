@@ -8,7 +8,7 @@ class teacher_model
     public function __construct()
     {
         //data source name
-        $dsn = 'mysqli:host=localhost;dbname=phpdasar';
+        $dsn = 'mysql:host=localhost;dbname=phpdasar';
         try {
             $this->dbh = new PDO($dsn, 'root', '');
         } catch (PDOException $e) {
@@ -20,5 +20,6 @@ class teacher_model
     {
         $this->statment = $this->dbh->prepare('SELECT * FROM guru');
         $this->statment->execute();
+        return $this->statment->fetchAll(PDO::FETCH_ASSOC);
     }
 }
