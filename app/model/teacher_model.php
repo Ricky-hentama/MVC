@@ -2,7 +2,7 @@
 
 class teacher_model
 {
-    private $table = 'guru';
+    private $table = ' guru';
     private $db;
 
     public function __construct()
@@ -12,7 +12,7 @@ class teacher_model
 
     public function getAllguru()
     {
-        $this->db->query('SELEC * FROM' . $this->table);
+        $this->db->query('SELECT * FROM' . $this->table);
         return $this->db->resultSet();
     }
 }
