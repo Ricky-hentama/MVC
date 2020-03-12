@@ -2,24 +2,17 @@
 
 class teacher_model
 {
-    private $dbh;
-    private $statment;
+    private $table = 'guru';
+    private $db;
 
     public function __construct()
     {
-        //data source name
-        $dsn = 'mysql:host=localhost;dbname=phpdasar';
-        try {
-            $this->dbh = new PDO($dsn, 'root', '');
-        } catch (PDOException $e) {
-            die($e->getMessage());
-        }
+        $this->db = new Database;
     }
 
     public function getAllguru()
     {
-        $this->statment = $this->dbh->prepare('SELECT * FROM guru');
-        $this->statment->execute();
-        return $this->statment->fetchAll(PDO::FETCH_ASSOC);
+        $this->db->query('SELEC * FROM' . $this->table);
+        return $this->db->resultSet();
     }
 }
