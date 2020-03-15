@@ -18,4 +18,7 @@ class Teacher extends Controller
         $this->view('teacher/detail', $data);
         $this->view('templates/footer');
     }
+    public function tambah($data)
+    {
+    }
 }
