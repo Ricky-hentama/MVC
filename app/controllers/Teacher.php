@@ -18,7 +18,11 @@ class Teacher extends Controller
         $this->view('teacher/detail', $data);
         $this->view('templates/footer');
     }
-    public function tambah($data)
+    public function tambah()
     {
+        if ($this->model('teacher_model')->tambahData($_POST) > 0) {
+            header('Location: ' . BASEURL . 'teacher');
+            exit;
+        }
     }
 }
