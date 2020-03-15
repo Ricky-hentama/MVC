@@ -46,12 +46,20 @@
                         <label for="umur">Umur</label>
                         <input type="number" class="form-control" id="umur" name="umur">
                     </div>
-
-
+                    <div class="form-group">
+                        <label for="status">Status</label>
+                        <select class="form-control" id="status" name="status">
+                            <option>Single</option>
+                            <option>Istri 1</option>
+                            <option>Istri 2</option>
+                            <option>Istri 3</option>
+                            <option>Istri 4</option>
+                        </select>
+                    </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Batal</button>
-                <button type="button" class="btn btn-primary">Tambah</button>
+                <button type="submit" class="btn btn-primary">Tambah</button>
                 </form>
             </div>
         </div>

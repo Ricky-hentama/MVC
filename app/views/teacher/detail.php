@@ -23,7 +23,7 @@
                 </tbody>
             </table>
 
-            <a href="<?= BASEURL; ?>/teacher" class="card-link badge badge-danger">kembali</a>
+            <a href="<?= BASEURL; ?>/teacher" class="card-link btn btn-danger">kembali</a>
         </div>
     </div>
 </div>
