@@ -30,7 +30,7 @@ class teacher_model
 
         $query = "INSERT INTO guru 
                     VALUES 
-                    ('',:nama, :mapel, :umur, :status)";
+                    (NULL,:nama, :mapel, :umur, :status)";
 
 
         $this->db->query($query);

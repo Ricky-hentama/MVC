@@ -32,14 +32,14 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="<?= BASEURL; ?>teacher/tambah" method="POST">
+                <form action="<?= BASEURL; ?>teacher/tambah" method="post">
                     <div class="form-group">
                         <label for="nama">Nama</label>
                         <input type="text" class="form-control" id="nama" aria-describedby="namaHelp" name="nama">
                         <small id="namaHelp" class="form-text text-muted">Menggunakan nama palsu dapat dikenakan pidana.</small>
                     </div>
                     <div class="form-group">
-                        <label for="mapel">Mata Pelajaran</label>
+                        <label for="mapel">Bidang keahlian</label>
                         <input type="text" class="form-control" id="mapel" name="mapel">
                     </div>
                     <div class="form-group">
