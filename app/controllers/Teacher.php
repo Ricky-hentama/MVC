@@ -21,6 +21,11 @@ class Teacher extends Controller
     public function tambah()
     {
         if ($this->model('teacher_model')->tambahData($_POST) > 0) {
+            Flasher::setFlash('berhasil', 'ditambahkan', 'success');
+            header('Location: ' . BASEURL . 'teacher');
+            exit;
+        } else {
+            Flasher::setFlash('gagal', 'ditambahkan', 'danger');
             header('Location: ' . BASEURL . 'teacher');
             exit;
         }
