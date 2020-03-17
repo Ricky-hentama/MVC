@@ -44,4 +44,12 @@ class teacher_model
 
         return $this->db->count();
     }
+    public function hapusData($data)
+    {
+        $id = $data['id'];
+        $query = "DELETE FROM guru 
+                   WHERE WHERE id= $id ";
+        $this->db->query($query);
+        return $this->db->count();
+    }
 }
