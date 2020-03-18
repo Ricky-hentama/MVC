@@ -23,10 +23,10 @@ class teacher_model
     }
     public function tambahData($data)
     {
-        // $nama = htmlspecialchars($data['nama']);
-        // $mapel = htmlspecialchars($data['mapel']);
-        // $umur = htmlspecialchars($data['umur']);
-        // $status = htmlspecialchars($data['status']);
+        $nama = htmlspecialchars($data['nama']);
+        $mapel = htmlspecialchars($data['mapel']);
+        $umur = htmlspecialchars($data['umur']);
+        $status = htmlspecialchars($data['status']);
 
         $query = "INSERT INTO guru 
                     VALUES 
@@ -35,10 +35,10 @@ class teacher_model
 
         $this->db->query($query);
 
-        $this->db->bind('nama', $data["nama"]);
-        $this->db->bind('mapel', $data["mapel"]);
-        $this->db->bind('umur', $data["umur"]);
-        $this->db->bind('status', $data["status"]);
+        $this->db->bind('nama', $nama);
+        $this->db->bind('mapel', $mapel);
+        $this->db->bind('umur', $umur);
+        $this->db->bind('status', $status);
 
         $this->db->execute();
         return $this->db->count();
