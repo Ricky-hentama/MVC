@@ -31,9 +31,9 @@ class Teacher extends Controller
         }
     }
 
-    public function hapus()
+    public function hapus($id)
     {
-        if ($this->model('teacher_model')->hapusData($_POST) > 0) {
+        if ($this->model('teacher_model')->hapusData($id) > 0) {
             Flasher::setFlash('Berhasil', 'Dihapus', 'success');
             header('Location: ' . BASEURL . 'teacher');
             exit;
