@@ -13,7 +13,7 @@
     <div class="row">
         <div class="col-lg-6">
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formModal">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formModal" id="tambahDataGuru">
                 Tambah Data Guru
             </button>
 
