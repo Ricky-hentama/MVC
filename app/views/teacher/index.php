@@ -23,9 +23,9 @@
                 <?php foreach ($data['guru'] as $guru) : ?>
                     <li class="list-group-item "><?= $guru["nama"] ?>
                         <!-- badge hapus -->
-                        <a href="<?= BASEURL; ?>teacher/hapus/<?= $guru['id'] ?>" class="badge badge-danger float-right ml-1" onclick="return confirm('Apakah anda yakin ingin menghapus <?= $guru["nama"] ?> ?');">Hapus</a>
+                        <a href="<?= BASEURL; ?>teacher/hapus/<?= $guru['id'] ?>" class="badge badge-danger float-right ml-1" onclick="return confirm('Apakah anda yakin ingin menghapus <?= $guru['nama'] ?> ?');">Hapus</a>
                         <!-- badge ubah -->
-                        <a href="<?= BASEURL; ?>teacher/ubah/<?= $guru['id'] ?>" class="badge badge-warning float-right ml-1" data-toggle="modal" data-target="#formModal" id="ubah">Ubah</a>
+                        <a href="<?= BASEURL; ?>teacher/ubah/<?= $guru['id'] ?>" class="badge badge-warning float-right ml-1" data-toggle="modal" data-target="#formModal" data-id="<?= $guru['id'] ?>" id="ubah">Ubah</a>
                         <!-- badge detail -->
                         <a href="<?= BASEURL; ?>teacher/detail/<?= $guru['id'] ?>" class="badge badge-primary float-right ml-1">Detail</a>
                     </li>
