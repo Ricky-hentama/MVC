@@ -5,6 +5,8 @@ $(document).ready(function() {
   });
   $("#ubah").click(function() {
     $("#judulModal").html("Ubah Data Guru");
-    $("#hehe").html("Ubah");
+    $("#tombol-aksi").html("Ubah");
+    const id = $(this).data("id");
+    console.log(id);
   });
 });
