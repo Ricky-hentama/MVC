@@ -75,7 +75,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Batal</button>
-                <button type="submit" class="btn btn-primary">Tambah</button>
+                <button type="submit" id="hehe" class="btn btn-primary">Tambah</button>
                 </form>
             </div>
         </div>
