@@ -14,7 +14,14 @@ $(document).ready(function () {
       data: { id: id },
       dataType: "json",
       success: function (data) {
+        $("#nama").val(data["nama"]);
+        $("#mapel").val(data["mapel"]);
+        $("#umur").val(data["umur"]);
+        $("#status").val(data["status"]);
         console.log(data);
+        $("#tombol-aksi").click((e) => {
+          alert(data["nama"]);
+        });
       },
     });
   });
