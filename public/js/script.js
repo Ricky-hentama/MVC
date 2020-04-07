@@ -3,11 +3,9 @@ $(document).ready(function () {
     $("#judulModal").html("Tambah Data Guru");
     $(".modal-footer button[type=submit]").html("Tambah");
   });
-  $("#ubah").click(function (e) {
+  $(".ubah").click(function () {
     $("#judulModal").html("Ubah Data Guru");
     $("#tombol-aksi").html("Ubah");
-    // const id = $(this).data("id");
-    alert(ok);
-    console.log(e);
+    const id = $(this).data("id");
   });
 });
