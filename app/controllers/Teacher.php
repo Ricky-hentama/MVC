@@ -43,4 +43,8 @@ class Teacher extends Controller
             exit;
         }
     }
+    public function ubah()
+    {
+        echo  json_encode($this->model('teacher_model')->getGuruById($_POST['id']));
+    }
 }
