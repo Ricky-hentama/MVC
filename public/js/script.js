@@ -6,6 +6,11 @@ $(document).ready(function () {
   $(".ubah").click(function () {
     $("#judulModal").html("Ubah Data Guru");
     $("#tombol-aksi").html("Ubah");
+    alert("ok");
+    $(".modal-body form").setAttribute(
+      "action",
+      "http://localhost/mvc/public/teacher/ubahdata"
+    );
     const id = $(this).data("id");
 
     $.ajax({

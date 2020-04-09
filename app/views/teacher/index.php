@@ -42,13 +42,13 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="judulModal">Tambah Data</h5>
+                <h5 class="modal-title" id="judulModal">Tambah tt</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <form action="<?= BASEURL; ?>teacher/tambah" method="post">
+                <form class="form-ubah" action="http://localhost/mvc/public/teacher/tambah" method="post">
                     <div class="form-group">
                         <label for="nama">Nama</label>
                         <input type="text" class="form-control" id="nama" aria-describedby="namaHelp" name="nama">

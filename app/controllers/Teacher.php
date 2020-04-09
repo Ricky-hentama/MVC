@@ -47,4 +47,7 @@ class Teacher extends Controller
     {
         echo  json_encode($this->model('teacher_model')->getGuruById($_POST['id']));
     }
+    public function ubahdata()
+    {
+    }
 }
